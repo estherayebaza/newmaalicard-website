@@ -13,14 +13,39 @@ Author URL: http://w3layouts.com
     <title>Maalicard</title>
 
     <link href="//fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
 
     <!-- Template CSS -->
     <link rel="stylesheet" href="assets/css/style-starter.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
-
 </head>
 
 <body>
+
+
+
+    <!-- Load Facebook SDK for JavaScript -->
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({
+                xfbml: true,
+                version: 'v13.0'
+            });
+        };
+
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js';
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+    </script>
+
+    <!-- Your Chat Plugin code -->
+    <div class="fb-customerchat" attribution="install_email" attribution_version="biz_inbox" page_id="113753683405310">
+    </div>
     <!--header-->
     <header id="site-header" class="fixed-top">
         <div class="container">
@@ -46,6 +71,7 @@ Author URL: http://w3layouts.com
                         <li class="nav-item @@contact__active ">
                             <a class="nav-link " href="index.html">Home</a>
                         </li>
+
                         <li class="nav-item dropdown @@pages__active">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 About<span class="fa fa-angle-down"></span>
@@ -60,6 +86,9 @@ Author URL: http://w3layouts.com
 
                             </div>
                         </li>
+
+
+
 
 
 
@@ -81,7 +110,6 @@ Author URL: http://w3layouts.com
                                 <a class="dropdown-item @@about__active" href="customerinformation.html">Customer information</a>
                                 <a class="dropdown-item @@about__active" href="opportunities.html">Job Opportunities</a>
 
-
                                 <a class="dropdown-item @@about__active" href="selfservice.html">FAQs<i class="fas fa-servicestack "></i></a>
 
                             </div>
@@ -94,82 +122,54 @@ Author URL: http://w3layouts.com
                     </ul>
     </header>
     <!--/header-->
-    <div class="inner-banner">
+    <div class="inner-banner ">
     </div>
 
-    <section class="w3l-bottom-grids-6 w3l-services py-5" id="services">
-        <div class="container py-lg-5 py-md-4">
-            <!--  <h6 class="title-small text-center">Our Services</h6>-->
-            <h3 class="title-big mb-md-5 mb-4 text-center">Customer information</h3>
 
-            <div class="grids-area-hny main-cont-wthree-fea row">
-                <p class="mt-md-4 mt-3">It is important for you as an account holder to be aware of your rights as a consumer and user of the MaaliCard services. Maalicard Limited has internal policies and procedures that govern the operation of services and also pre-determine
-                    the resultant outcomes. As an organization we have tried to pre-examine a number of situations in order to mitigate any risk or problems that may occur. In addition to the internal policies, we have adopted a number of international
-                    industry guidelines in the design and operation of the services. Therefore as a company, we do not guarantee 100% proof of fraud if you do not do your part in safety and protection </p>
-                <div class="col-lg-4 col-md-6 grids-feature">
-                    <div class="area-box">
-                        <h4><a href="#feature" class="title-head">Verification</a></h4>
-                        <p class="">Before transacting on the Maalipot, your account will be verified with a one-time pin (OTP), this will be delivered in a text message or Voice Message</p>
+    <!-- services page block grids -->
+    <section class="w3l-services py-5 ">
+        <div class="container py-lg-5 py-md-4 py-2 ">
+
+            <h3 class="title-big mb-md-5 mb-4 text-center">Employment opportunities</h3>
+
+            <div class="row bottom-ab-grids ">
+                <div class="col-lg-6 bottom-ab-left align-self ">
+
+                    <div class="cont-4 mt-lg-5 mt-4 ">
+                        <div class="list mb-4 ">
+                            <span class="fa fa-check "></span>
+                            <div class="list-info ">
+                                <h4>Graduate trainee program</h4>
+                                <p>You should be in position to reach out to us via the different social media, direct lines or WhatsApp . The issues will be resolved in 48 hours from the time of reporting </p>
+                            </div>
+                        </div>
+                        <div class="list mb-4 ">
+                            <span class="fa fa-check "></span>
+                            <div class="list-info ">
+                                <h4>Flexible employment</h4>
+                                <p>You should be in position to reach out to us via the different social media, direct lines or WhatsApp . The issues will be resolved in 48 hours from the time of reporting </p>
+                            </div>
+                        </div>
+                        <div class="list ">
+                            <span class="fa fa-check "></span>
+                            <div class="list-info ">
+                                <h4>Full-time employment</h4>
+                                <p>Before contacting us, make sure you are the account owner or authorized user of the account. It is important that on behalf of your company, you send an email first. <br>Email us at customercare@maalicard.com </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 grids-feature mt-md-0 mt-4">
-                    <div class="area-box">
-                        <h4><a href="#feature" class="title-head">Data Protection</a></h4>
-                        <p class="">As part of our commitment to your satisfaction; we have published a data security policy that protects your personal data, transaction , passwords, this is downloadable on the website. </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 grids-feature mt-lg-0 mt-4">
-                    <div class="area-box">
-                        <h4><a href="#feature" class="title-head">Account Protection</a></h4>
-                        <p class="">Avoid entry from unauthorized users, enable the two -factor authentication on your maalipot web account . It is a secure way to avoid intruders. This provides double protection.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
-                    <div class="area-box">
-                        <h4><a href="#feature" class="title-head">Regulations and lisensing</a></h4>
-                        <p class="">
-                            Maalicard is a registered business entity under the laws of the Republic of Uganda and is also regulated by the affiliated bodies such as Uganda Microfinance Regulatory. Authority
-                        </p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
-                    <div class="area-box">
-                        <h4><a href="#feature" class="title-head">Password Protection </a></h4>
-                        <p class="">Avoid entry from unauthorized users, enable the two -factor authentication on your maalipot web account . It is a sure way to avoid intruders. This provides double protection.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 grids-feature mt-lg-5 mt-4">
-                    <div class="area-box">
-                        <h4><a href="#feature" class="title-head">Exchange of information</a></h4>
-                        <p class="">Maali may not share your information unless the purpose of sharing is aimed at enabling you to receive a given service you have requested for in good faith and is inline with our regular business.</p>
-                    </div>
+                <div class="col-lg-6 bottom-right-grids mt-lg-0 mt-5 ">
+                    <img src="assets/images/job.jpg" alt=" " class="radius-image img-fluid " height="870px">
                 </div>
             </div>
         </div>
     </section>
 
 
-    <div id="parent">
-
-        <h3> Liking what we do ,Follow us on the following Social Media Channels
-        </h3>
-
-        <div id="social_media">
-
-            <a href="https://www.facebook.com/maalicard"><i class="fab fa-facebook"></i></a>
-            <a href="https://twitter.com/maalicard"><i class="fab fa-twitter"></i></a>
-            <a href="https://www.youtube.com/channel/UCVHBI1fqx-hRdSmXMUYz8dA"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/maalicard_official/"><i class="fab fa-instagram"></i></a>
-            <a href="https://www.linkedin.com/company/maalicard/"><i class="fab fa-linkedin-in"></i></a>
-        </div>
-        <!-- Start of HubSpot Embed Code -->
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js-eu1.hs-scripts.com/25739100.js"></script>
-        <!-- End of HubSpot Embed Code -->
-
-    </div>
 
 
-    <section class="w3l-footer-29-main">
+    <section class="w3l-footer-29-main ">
 
 
         <section class="w3l-footer-29-main ">
@@ -217,21 +217,28 @@ Author URL: http://w3layouts.com
                                 <p class="small ">September 28, 2020</p>
                             </div>
                             <div class="post1 mt-4 ">
-                                <a href="blog-single.html " class="post-title ">Stocks Could Surge 10% between Now And 2020</a>
-                                <p class="small ">September 28, 2020</p>
+                                <div id="social_media">
+                                    <h6 class="footer-title-29 ">Follow us</h6>
+
+                                    <a href="https://www.facebook.com/maalicard"><i class="fab fa-facebook"></i></a>
+                                    <a href="https://twitter.com/maalicard"><i class="fab fa-twitter"></i></a>
+                                    <a href="https://www.youtube.com/channel/UCVHBI1fqx-hRdSmXMUYz8dA"><i class="fab fa-youtube"></i></a>
+                                    <a href="https://www.instagram.com/maalicard_official/"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/maalicard/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
             <!-- copyright -->
-            <section class="w3l-copyright text-center">
-                <div class="container">
-                    <p class="copy-footer-29">© 2022 Maalicard</p>
+            <section class="w3l-copyright text-center ">
+                <div class="container ">
+                    <p class="copy-footer-29 ">© 2022 Maalicard</p>
                 </div>
 
                 <!-- move top -->
-                <button onclick="topFunction()" id="movetop" title="Go to top">
+                <button onclick="topFunction() " id="movetop " title="Go to top ">
       &#10548;
     </button>
                 <script>
@@ -242,9 +249,9 @@ Author URL: http://w3layouts.com
 
                     function scrollFunction() {
                         if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                            document.getElementById("movetop").style.display = "block";
+                            document.getElementById("movetop ").style.display = "block ";
                         } else {
-                            document.getElementById("movetop").style.display = "none";
+                            document.getElementById("movetop ").style.display = "none ";
                         }
                     }
 
@@ -261,23 +268,23 @@ Author URL: http://w3layouts.com
         <!-- //footer -->
 
         <!--  javascripts file here -->
-        <script src="assets/js/jquery-3.3.1.min.js"></script>
+        <script src="assets/js/jquery-3.3.1.min.js "></script>
 
-        <script src="assets/js/theme-change.js"></script>
+        <script src="assets/js/theme-change.js "></script>
         <!-- //light and dark mode switch js -->
 
-        <script src="assets/js/circles.js"></script>
+        <script src="assets/js/circles.js "></script>
 
         <!-- stats number counter-->
-        <script src="assets/js/jquery.waypoints.min.js"></script>
-        <script src="assets/js/jquery.countup.js"></script>
+        <script src="assets/js/jquery.waypoints.min.js "></script>
+        <script src="assets/js/jquery.countup.js "></script>
         <script>
             $('.counter').countUp();
         </script>
         <!-- //stats number counter -->
 
         <!-- owl carousel -->
-        <script src="assets/js/owl.carousel.js"></script>
+        <script src="assets/js/owl.carousel.js "></script>
         <!-- script for banner slider-->
         <script>
             $(document).ready(function() {
@@ -313,7 +320,7 @@ Author URL: http://w3layouts.com
         <!-- script for tesimonials carousel slider -->
         <script>
             $(document).ready(function() {
-                $("#owl-demo2").owlCarousel({
+                $("#owl-demo2 ").owlCarousel({
                     loop: true,
                     margin: 20,
                     nav: false,
@@ -346,34 +353,34 @@ Author URL: http://w3layouts.com
 
         <!--/MENU-JS-->
         <script>
-            $(window).on("scroll", function() {
+            $(window).on("scroll ", function() {
                 var scroll = $(window).scrollTop();
 
                 if (scroll >= 80) {
-                    $("#site-header").addClass("nav-fixed");
+                    $("#site-header ").addClass("nav-fixed ");
                 } else {
-                    $("#site-header").removeClass("nav-fixed");
+                    $("#site-header ").removeClass("nav-fixed ");
                 }
             });
 
             //Main navigation Active Class Add Remove
-            $(".navbar-toggler").on("click", function() {
-                $("header").toggleClass("active");
+            $(".navbar-toggler ").on("click ", function() {
+                $("header ").toggleClass("active ");
             });
-            $(document).on("ready", function() {
+            $(document).on("ready ", function() {
                 if ($(window).width() > 991) {
-                    $("header").removeClass("active");
+                    $("header ").removeClass("active ");
                 }
-                $(window).on("resize", function() {
+                $(window).on("resize ", function() {
                     if ($(window).width() > 991) {
-                        $("header").removeClass("active");
+                        $("header ").removeClass("active ");
                     }
                 });
             });
         </script>
         <!--//MENU-JS-->
 
-        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/bootstrap.min.js "></script>
         <!-- //bootstrap js -->
 </body>
 
